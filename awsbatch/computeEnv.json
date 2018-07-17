@@ -1,0 +1,26 @@
+{
+  "computeEnvironmentName": "test-compute-environment",
+  "type": "MANAGED",
+  "computeResources": {
+    "type": "EC2",
+    "minvCpus": 2,
+    "maxvCpus": 256,
+    "desiredvCpus": 2,
+    "instanceTypes": [
+      "optimal"
+    ],
+    "subnets": [
+      "subnet-subnet-id1",
+      "subnet-subnet-id2",
+      "subnet-subnet-id3"
+    ],
+    "securityGroupIds": [
+      "sg-security-group"
+    ],
+    "instanceRole": "arn:aws:iam::MASKED:instance-profile/ecsInstanceRole",
+    "tags": {
+      "Name": "some-random-tag"
+    }
+  },
+  "serviceRole": "arn:aws:iam::IAMID:role/service-role/YOUR_SERVICE_ROLE"
+}

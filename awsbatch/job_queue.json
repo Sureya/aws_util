@@ -1,0 +1,10 @@
+{
+  "jobQueueName": "high-priority-queue",
+  "priority": 1,
+  "computeEnvironmentOrder": [
+    {
+      "order": 1,
+      "computeEnvironment": "test-compute-environment"
+    }
+  ]
+}
